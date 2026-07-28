@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Flanella";
+	src: url(/fonts/Flanella.ttf);
+}
+
+@font-face {
+	font-family: "Walkway";
+	src: url(/fonts/Walkway.ttf);
+}
+
+:root{ 
+/* CSS HEX */
+--rich-mahogany: #3c1518ff;
+--dark-garnet: #69140eff;
+--rust-brown: #a44200ff;
+--bronze: #d58936ff;
+--vanilla-custard: #f2f3aeff;
+
+--text: var(--rich-mahogany);
+--background: var(--vanilla-custard);
+--accent: var(--rust-brown);
+
+
+@media (prefers-color-scheme: dark){
+	--text: var(--rich-manhogany);
+	--background: var(--dark-garnet);
+}
+
+background: var(--background);
+color: var(--text);
+font-size: 1.2rem;
+font-family: helvetica;
+
+}
+
+body, head, #app{
+	height: 100vh;
+	margin: 0;
+}
+
+:root, body, head, #app{
+	margin: 0;
+}
